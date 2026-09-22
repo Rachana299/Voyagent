@@ -138,13 +138,3 @@ streamlit_app.py   Streamlit user interface
 requirements.txt   Python dependencies
 ```
 
-## Security notes
-
-- Keep all API keys in a local environment file or a secrets manager.
-- Do not commit `.env`, `.env.*`, private keys, generated artifacts, or virtual environments.
-- Rotate a credential immediately if it has been exposed in source code, terminal output, commits, or logs.
-- Verify prices, weather, operating hours, and travel requirements before relying on a generated itinerary.
-
-## Development notes
-
-The model provider and model names are defined in `config/config.yaml`. The default workflow currently uses the Groq provider. The FastAPI service enables permissive CORS for local development; restrict `allow_origins` before deploying publicly.
